@@ -111,7 +111,7 @@ HYBRID_READ_REGISTERS: tuple[ModBusRegister, ...] = (
     ModBusRegister(13018, "total_direct_energy_consumption", "U32", 0.1, KILO_WATT_HOUR),
     ModBusRegister(13020, "battery_voltage", "U16", 0.1, VOLTAGE),
     ModBusRegister(13021, "battery_current", "U16", 0.1, AMPERE),
-    ModBusRegister(13022, "battery_power", "U16", 0.1, WATT),
+    ModBusRegister(13022, "battery_power", "U16", unit_of_measure=WATT),
     ModBusRegister(13023, "battery_level", "U16", 0.1, PERCENTAGE),
     ModBusRegister(13024, "battery_state_of_health", "U16", 0.1, PERCENTAGE),
     ModBusRegister(13025, "battery_temperature", "U16", 0.1, TEMP_CELSIUS),
